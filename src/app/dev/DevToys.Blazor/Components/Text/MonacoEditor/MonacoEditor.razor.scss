@@ -46,6 +46,11 @@
         position: relative;
         height: 100%;
         pointer-events: auto;
+        
+        *, *::before, *::after {
+          -webkit-user-select: text;
+          user-select: text;
+        }
 
         .monaco-editor-standalone-header {
             margin-bottom: 4px;
